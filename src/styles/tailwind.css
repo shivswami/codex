@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --color-accent: #2563eb;
+}
+
+body {
+  background-color: white;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media print {
+  button { display: none; }
+}

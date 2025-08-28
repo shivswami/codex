@@ -1,0 +1,162 @@
+{
+  "quarter": "Jun–Aug 2025",
+  "executiveSummary": [
+    {
+      "title": "Copilots → Real Agents",
+      "bullets": [
+        "Agents plan, browse, write code, run tools; gated by user approvals.",
+        "Governance hooks: BYO models, MCP clients, agent panels."
+      ],
+      "logos": ["openai","anthropic","google","microsoft","github","aws"]
+    },
+    {
+      "title": "Agentic Software Engineering Goes Mainstream",
+      "bullets": [
+        "GitHub Agents panel (background tasks, PRs, traceability).",
+        "Gemini CLI / Code Assist Agent Mode; Claude Code for enterprise."
+      ],
+      "logos": ["github","google","anthropic"]
+    },
+    {
+      "title": "Standards Hardened",
+      "bullets": [
+        "MCP GA in Visual Studio; spec (2025-06-18) adds OAuth-aligned auth + structured outputs.",
+        "A2A emerges for cross-vendor agent orchestration."
+      ],
+      "logos": ["microsoft","mcp","a2a"]
+    },
+    {
+      "title": "Risk Posture Matures",
+      "bullets": [
+        "OpenAI + Anthropic joint safety evals for frontier agents.",
+        "Compositional risk flagged with multi-MCP chaining; tighten least-privilege."
+      ],
+      "logos": ["openai","anthropic","security"]
+    }
+  ],
+  "vendors": [
+    {
+      "name": "OpenAI",
+      "updates": [
+        {
+          "title": "ChatGPT Agent (Agent Mode)",
+          "whyItMatters": "First broadly shipped, consumer-grade agentic UI with explicit approval gates.",
+          "notes": ["Web + terminal + API tools; produces PRs/docs with checkpoints."]
+        },
+        {
+          "title": "Enterprise Adoption Signal",
+          "whyItMatters": "Public-sector pattern likely to influence regulated industries.",
+          "notes": ["GSA/Fed footprint; compliance-forward deployment model."]
+        }
+      ]
+    },
+    {
+      "name": "Anthropic",
+      "updates": [
+        {
+          "title": "Claude Code → Enterprise",
+          "whyItMatters": "Admin controls, usage analytics, spend caps; policy-driven IDE agent.",
+          "notes": ["MCP server configs; seat management."]
+        },
+        {
+          "title": "Artifacts as Agentic UI",
+          "whyItMatters": "Runnable applets in chat; fast prototyping before pipelines.",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "name": "Google",
+      "updates": [
+        {
+          "title": "Gemini 2.5 in Dev Tooling",
+          "whyItMatters": "Agent Mode + deeper CLI + Canvas; practical SDLC integration.",
+          "notes": []
+        },
+        {
+          "title": "Gemini API Updates (Aug)",
+          "whyItMatters": "2.5 Image Preview; URL context GA; fine-tuning on Vertex AI.",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "name": "Microsoft & GitHub",
+      "updates": [
+        {
+          "title": "Copilot Agents Panel",
+          "whyItMatters": "Delegate tasks, background runs, open PRs, tag reviewers—traceable.",
+          "notes": []
+        },
+        {
+          "title": "Visual Studio MCP client GA + BYO Model",
+          "whyItMatters": "Governed internal tools + flexible models in enterprise IDE.",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "name": "AWS",
+      "updates": [
+        {
+          "title": "Amazon Q Developer (Agentic IDE)",
+          "whyItMatters": "Reads/writes files, runs shell, generates diffs.",
+          "notes": []
+        },
+        {
+          "title": "Bedrock AgentCore + Gateway (MCP-aware)",
+          "whyItMatters": "Host enterprise agents at scale; gateway for tools.",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "name": "Open Source",
+      "updates": [
+        {
+          "title": "Cline (client-side BYOK, SOC-2)",
+          "whyItMatters": "Attractive for code-sovereignty; long-horizon tasks improving.",
+          "notes": []
+        },
+        {
+          "title": "Roo Code (fast weekly releases)",
+          "whyItMatters": "MCP/tooling integrations; OSS velocity.",
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "standards": {
+    "mcp": {
+      "status": "GA in Visual Studio",
+      "specDate": "2025-06-18",
+      "highlights": ["OAuth-aligned auth", "Structured tool output", "User elicitation flows"]
+    },
+    "a2a": {
+      "status": "Emerging cross-vendor agent-to-agent protocol",
+      "highlights": ["Inter-agent orchestration", "SDKs/tutorial momentum"]
+    }
+  },
+  "implications": {
+    "sdlc": [
+      "Enable GitHub Agents panel for pilot repos",
+      "Enforce PR policies & code-owner reviews",
+      "Log agent actions to SIEM"
+    ],
+    "standards": [
+      "Stand up MCP gateway or AWS AgentCore Gateway",
+      "Curate OAuth-protected tools (Jira/Confluence/ServiceNow/CI/CD)",
+      "Tag data domains; rate-limit tool calls"
+    ],
+    "guardrails": [
+      "Prompt-injection testing",
+      "MCP server allow-lists; least-privilege scopes",
+      "Consent UX for tool use; red-team data exfil paths"
+    ],
+    "ux": [
+      "Chat + Artifacts/Canvas for rapid prototyping",
+      "Agent panels for engineering",
+      "ChatGPT Agent for research/ops with approval gates"
+    ]
+  }
+}
